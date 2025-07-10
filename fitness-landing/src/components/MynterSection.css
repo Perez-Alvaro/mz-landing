@@ -1,0 +1,86 @@
+.mynter {
+  position: relative;
+  background-color: #000;
+  padding: 50px 20px;
+  overflow: hidden;
+}
+
+.mynter-texture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.1;
+}
+
+.mynter-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mynter-logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.mynter-title {
+  font-family: 'Anton', sans-serif;
+  color: #D7FB00;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.mynter-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.mynter-highlight {
+  color: #7B2FF7;
+}
+
+.mynter-features p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  color: #ccc;
+  margin: 8px 0;
+}
+
+.mynter-button {
+  background-color: #7B2FF7;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  padding: 12px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  margin-top: 30px;
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.mynter-button:hover {
+  background-color: #00C8FF;
+  color: #fff;
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+  .mynter {
+    padding: 80px 80px;
+  }
+
+  .mynter-title {
+    font-size: 3rem;
+    text-align: left;
+  }
+}

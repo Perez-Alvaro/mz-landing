@@ -1,0 +1,97 @@
+.membership {
+  position: relative;
+  background-color: #000;
+  padding: 50px 20px;
+  overflow: hidden;
+}
+
+.membership-texture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.1;
+}
+
+.membership-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.membership-title {
+  font-family: 'Anton', sans-serif;
+  color: #D7FB00;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.membership-plans {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.plan-card {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  padding: 30px 20px;
+  color: #ccc;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  border: 1px solid #D7FB00;
+}
+
+.plan-card-title {
+  font-family: 'Anton', sans-serif;
+  font-size: 1.3rem;
+  color: #D7FB00;
+  margin-bottom: 12px;
+}
+
+.plan-price {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.plan-features li {
+  margin-bottom: 8px;
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+  .membership {
+    padding: 80px 80px;
+  }
+
+  .membership-title {
+    font-size: 3rem;
+    text-align: left;
+  }
+
+  .membership-plans {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .plan-card {
+    flex: 1;
+    max-width: 30%;
+  }
+}
