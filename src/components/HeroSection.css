@@ -11,15 +11,6 @@
   overflow: hidden;
 }
 
-.hero-texture {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  opacity: 0.15;
-}
 
 .hero-content {
   z-index: 1;
@@ -29,10 +20,12 @@
 
 .hero-title {
   font-family: 'Anton', sans-serif;
-  font-size: 2.4rem;
+  font-size: 3rem;
   color: white;
   margin-bottom: 20px;
   line-height: 1.2;
+  text-shadow: 2px 2px 0 #D7FB00;
+  letter-spacing: 1px;
 }
 
 .hero-title .highlight {
@@ -46,8 +39,8 @@
   font-family: 'Inter', sans-serif;
   color: #ccc;
   margin-bottom: 14px;
-  line-height: 1.5;
-  font-size: 1rem;
+  line-height: 1.8;
+  font-size: 1.1rem;
 }
 
 .hero-description strong {
@@ -85,11 +78,11 @@
   }
 
   .hero-title {
-    font-size: 3.5rem;
+    font-size: 5rem;
   }
 
   .hero-description {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .hero-image {
