@@ -31,18 +31,25 @@
 }
 
 .programs-list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
 }
 
 .program-card {
+  position: relative;
   background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 8px;
-  padding: 30px 20px;
+  border-radius: 12px;
+  padding: 40px 24px;
   color: #ccc;
   text-align: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  border: 2px solid #D7FB00;
+  transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+  transform: scale(1.05);
 }
 
 .program-card-title {
@@ -71,12 +78,6 @@
   }
 
   .programs-list {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .program-card {
-    flex: 1;
-    max-width: 30%;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
