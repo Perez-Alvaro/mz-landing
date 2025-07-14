@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export default function MembershipSection() {
   return (
-    <section id="membership" className="membership">
+    <section id="membresias" className="membership-section">
       <svg className="membership-texture" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
         <defs>
           <pattern id="lines" patternUnits="userSpaceOnUse" width="40" height="40">

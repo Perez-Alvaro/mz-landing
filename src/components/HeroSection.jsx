@@ -60,14 +60,15 @@ export default function HeroSection() {
         </motion.p>
 
         <motion.a
-          href="#membership"
+          href="#membresias"
           className="hero-button"
-          initial={{ opacity: 0, y: 10 }}
+          initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.2, duration: 0.6 }}
+          transition={{ delay: 1.1, duration: 0.8 }}
         >
           VER PLANES
         </motion.a>
+
       </div>
 
       <motion.img
