@@ -17,6 +17,7 @@
 .membership-title {
   font-family: 'Anton', sans-serif;
   color: #D7FB00;
+
   font-size: 3rem;
   margin-bottom: 50px;
   text-shadow: 2px 2px 0 #000;
@@ -31,6 +32,7 @@
   50% {
     text-shadow: 2px 2px 0 #000, 0 0 20px #D7FB00;
   }
+
 }
 
 .membership-plans {
@@ -49,6 +51,7 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
   border: 2px solid #D7FB00;
   transition: transform 0.3s ease;
+
   overflow: hidden;
   animation: cardBounce 6s ease-in-out infinite;
 }
@@ -60,6 +63,7 @@
   50% {
     transform: translateY(-6px);
   }
+
 }
 
 .plan-card::before {
@@ -78,7 +82,9 @@
 
 .plan-card-title {
   font-family: 'Anton', sans-serif;
+
   font-size: 1.8rem;
+
   color: #D7FB00;
   margin-bottom: 16px;
   text-shadow: 1px 1px 0 #000;
@@ -86,11 +92,13 @@
 
 .plan-price {
   font-family: 'Inter', sans-serif;
+
   font-size: 1.6rem;
   color: #fff;
   margin-bottom: 20px;
   font-weight: bold;
 }
+
 
   .plan-features {
     list-style: none;
@@ -101,6 +109,7 @@
     line-height: 1.8;
     color: #ccc;
   }
+
 
 .plan-features li {
   margin-bottom: 10px;
@@ -113,12 +122,15 @@
   }
 
   .membership-title {
+
     font-size: 4.5rem;
+
     text-align: left;
   }
 
   .membership-plans {
     grid-template-columns: repeat(3, 1fr);
+
   }
 
   .plan-card-title {
@@ -131,5 +143,6 @@
 
   .plan-features {
     font-size: 1.4rem;
+
   }
 }

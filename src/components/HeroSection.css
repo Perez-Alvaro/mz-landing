@@ -20,12 +20,14 @@
 
 .hero-title {
   font-family: 'Anton', sans-serif;
+
   font-size: 3.5rem;
   color: white;
   margin-bottom: 20px;
   line-height: 1.2;
   text-shadow: 2px 2px 0 #D7FB00;
   letter-spacing: 1px;
+
   animation: heroPulse 3s ease-in-out infinite;
 }
 
@@ -53,7 +55,9 @@
   color: #ccc;
   margin-bottom: 14px;
   line-height: 1.8;
+
   font-size: 1.3rem;
+
 }
 
 .hero-description strong {
@@ -102,11 +106,13 @@
   }
 
   .hero-title {
+
     font-size: 5.5rem;
   }
 
   .hero-description {
     font-size: 1.4rem;
+
   }
 
   .hero-image {
