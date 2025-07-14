@@ -7,7 +7,7 @@ export default function HeroSection() {
       <svg className="hero-texture" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
         <defs>
           <pattern id="lines" patternUnits="userSpaceOnUse" width="40" height="40">
-            <path d="M0,0 L40,40 M40,0 L0,40" stroke="#222" strokeWidth="1" />
+            <path d="M0,0 L40,40 M40,0 L0,40" stroke="#D7FB00" strokeWidth="1" />
           </pattern>
         </defs>
         <rect width="100%" height="100%" fill="url(#lines)" />
@@ -60,14 +60,15 @@ export default function HeroSection() {
         </motion.p>
 
         <motion.a
-          href="#membership"
+          href="#membresias"
           className="hero-button"
-          initial={{ opacity: 0, y: 10 }}
+          initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.2, duration: 0.6 }}
+          transition={{ delay: 1.1, duration: 0.8 }}
         >
           VER PLANES
         </motion.a>
+
       </div>
 
       <motion.img
