@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 
 export default function MembershipSection() {
   return (
+
     <section id="membership" className="membership">
 
       <div className="membership-content">

@@ -31,6 +31,7 @@
 
 .plan-card {
   position: relative;
+
   background: radial-gradient(circle at top left, rgba(215, 251, 0, 0.15), rgba(0, 0, 0, 0.7));
   border-radius: 12px;
   padding: 40px 24px;
@@ -39,6 +40,7 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
   border: 2px solid #D7FB00;
   transition: transform 0.3s ease;
+
   overflow: hidden;
 }
 
@@ -99,6 +101,7 @@
 
   .membership-plans {
     grid-template-columns: repeat(3, 1fr);
+
   }
 
   .plan-card-title {
@@ -107,5 +110,6 @@
 
   .plan-price {
     font-size: 1.6rem;
+
   }
 }
