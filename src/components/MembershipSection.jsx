@@ -3,11 +3,11 @@ import { motion } from 'framer-motion';
 
 export default function MembershipSection() {
   return (
-    <section className="membership">
+    <section id="membership" className="membership">
       <svg className="membership-texture" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
         <defs>
           <pattern id="lines" patternUnits="userSpaceOnUse" width="40" height="40">
-            <path d="M0,0 L0,40 M20,0 L20,40" stroke="#222" strokeWidth="1" />
+            <path d="M0,0 L0,40 M20,0 L20,40" stroke="#D7FB00" strokeWidth="1" />
           </pattern>
         </defs>
         <rect width="100%" height="100%" fill="url(#lines)" />

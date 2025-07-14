@@ -31,19 +31,25 @@
 }
 
 .membership-plans {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
 }
 
 .plan-card {
+  position: relative;
   background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 8px;
-  padding: 30px 20px;
+  border-radius: 12px;
+  padding: 40px 24px;
   color: #ccc;
   text-align: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-  border: 1px solid #D7FB00;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  border: 2px solid #D7FB00;
+  transition: transform 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: scale(1.05);
 }
 
 .plan-card-title {
@@ -86,12 +92,6 @@
   }
 
   .membership-plans {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .plan-card {
-    flex: 1;
-    max-width: 30%;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
