@@ -4,14 +4,14 @@ export default function FinalSection() {
   return (
     <section className="final">
       <div className="final-content">
-        <h2 className="final-title">¡LISTO PARA CAMBIAR TU VIDA?</h2>
+        <h2 className="final-title">TRANSFORMÁ TU CUERPO HOY</h2>
 
         <p className="final-text">
-          Esto no es magia, es trabajo y constancia. Pero no vas a estar solo: te acompaño en el proceso para que logres el cuerpo y la mentalidad que siempre buscaste.
+          Sin promesas vacías: con mi guía vas a entrenar mejor, comer bien y mantener la constancia que siempre te faltó.
         </p>
 
         <p className="final-text">
-          ¿Empezamos hoy o seguís esperando el "momento perfecto"?
+          Dejá la espera y empezá a cambiar ahora mismo.
         </p>
 
         <div className="final-icons">

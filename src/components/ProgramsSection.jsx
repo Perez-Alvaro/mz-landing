@@ -4,14 +4,6 @@ import { motion } from 'framer-motion';
 export default function ProgramsSection() {
   return (
     <section className="programs">
-      <svg className="programs-texture" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
-        <defs>
-          <pattern id="grid" patternUnits="userSpaceOnUse" width="30" height="30">
-            <path d="M0 0 L0 30 M0 0 L30 0" stroke="#333" strokeWidth="0.8" />
-          </pattern>
-        </defs>
-        <rect width="100%" height="100%" fill="url(#grid)" />
-      </svg>
 
       <div className="programs-content">
         <h2 className="programs-title">¿QUÉ INCLUYE EL PLAN?</h2>
