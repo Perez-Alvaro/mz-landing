@@ -16,8 +16,18 @@
 .testimonios-title {
   font-family: 'Anton', sans-serif;
   color: #D7FB00;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 40px;
+  animation: titleGlow 4s ease-in-out infinite;
+}
+
+@keyframes titleGlow {
+  0%, 100% {
+    text-shadow: 0 0 10px #D7FB00;
+  }
+  50% {
+    text-shadow: 0 0 20px #D7FB00;
+  }
 }
 
 .testimonios-list {
@@ -36,6 +46,17 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
   border: 2px solid #D7FB00;
   transition: transform 0.3s ease;
+
+  animation: cardBounce 6s ease-in-out infinite;
+}
+
+@keyframes cardBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
 }
 
 .testimonio-card:hover {
@@ -53,7 +74,7 @@
 
 .testimonio-text {
   font-family: 'Inter', sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.5;
   color: #ccc;
   margin-bottom: 12px;
@@ -61,7 +82,7 @@
 
 .testimonio-author {
   font-family: 'Anton', sans-serif;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: #D7FB00;
 }
 
@@ -72,7 +93,7 @@
   }
 
   .testimonios-title {
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-align: left;
   }
 
@@ -83,5 +104,13 @@
   .testimonio-avatar {
     width: 100px;
     height: 100px;
+  }
+
+  .testimonio-text {
+    font-size: 1.4rem;
+  }
+
+  .testimonio-author {
+    font-size: 1.2rem;
   }
 }

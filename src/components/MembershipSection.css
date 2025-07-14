@@ -17,10 +17,22 @@
 .membership-title {
   font-family: 'Anton', sans-serif;
   color: #D7FB00;
-  font-size: 2.5rem;
+
+  font-size: 3rem;
   margin-bottom: 50px;
   text-shadow: 2px 2px 0 #000;
   letter-spacing: 1px;
+  animation: titleGlow 4s ease-in-out infinite;
+}
+
+@keyframes titleGlow {
+  0%, 100% {
+    text-shadow: 2px 2px 0 #000, 0 0 10px #D7FB00;
+  }
+  50% {
+    text-shadow: 2px 2px 0 #000, 0 0 20px #D7FB00;
+  }
+
 }
 
 .membership-plans {
@@ -31,7 +43,6 @@
 
 .plan-card {
   position: relative;
-
   background: radial-gradient(circle at top left, rgba(215, 251, 0, 0.15), rgba(0, 0, 0, 0.7));
   border-radius: 12px;
   padding: 40px 24px;
@@ -42,6 +53,17 @@
   transition: transform 0.3s ease;
 
   overflow: hidden;
+  animation: cardBounce 6s ease-in-out infinite;
+}
+
+@keyframes cardBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+
 }
 
 .plan-card::before {
@@ -60,7 +82,9 @@
 
 .plan-card-title {
   font-family: 'Anton', sans-serif;
-  font-size: 1.6rem;
+
+  font-size: 1.8rem;
+
   color: #D7FB00;
   margin-bottom: 16px;
   text-shadow: 1px 1px 0 #000;
@@ -68,21 +92,24 @@
 
 .plan-price {
   font-family: 'Inter', sans-serif;
-  font-size: 1.4rem;
+
+  font-size: 1.6rem;
   color: #fff;
   margin-bottom: 20px;
   font-weight: bold;
 }
 
-.plan-features {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #ccc;
-}
+
+  .plan-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+  font-size: 1.3rem;
+    line-height: 1.8;
+    color: #ccc;
+  }
+
 
 .plan-features li {
   margin-bottom: 10px;
@@ -95,7 +122,9 @@
   }
 
   .membership-title {
-    font-size: 4rem;
+
+    font-size: 4.5rem;
+
     text-align: left;
   }
 
@@ -105,11 +134,15 @@
   }
 
   .plan-card-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .plan-price {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+  }
+
+  .plan-features {
+    font-size: 1.4rem;
 
   }
 }
