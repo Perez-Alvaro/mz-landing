@@ -4,14 +4,6 @@ import './HeroSection.css';
 export default function HeroSection() {
   return (
     <section className="hero">
-      <svg className="hero-texture" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
-        <defs>
-          <pattern id="lines" patternUnits="userSpaceOnUse" width="40" height="40">
-            <path d="M0,0 L40,40 M40,0 L0,40" stroke="#222" strokeWidth="1" />
-          </pattern>
-        </defs>
-        <rect width="100%" height="100%" fill="url(#lines)" />
-      </svg>
 
       <div className="hero-content">
         <motion.h1
