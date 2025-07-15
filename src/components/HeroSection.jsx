@@ -52,7 +52,7 @@ export default function HeroSection() {
         </motion.p>
 
         <motion.a
-          href="#membresias"
+          href="#membership"
           className="hero-button"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
