@@ -81,7 +81,6 @@
 
 .program-card-title {
   font-family: 'Anton', sans-serif;
-
   font-size: 2rem;
   color: #D7FB00;
   margin-bottom: 18px;
@@ -105,6 +104,7 @@
   }
 
   .programs-title {
+
 
     font-size: 4.5rem;
     text-align: left;

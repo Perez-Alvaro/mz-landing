@@ -53,25 +53,27 @@
   border: 2px solid #D7FB00;
   transition: transform 0.3s ease;
 
-  overflow: hidden;
+  overflow: visible;
   animation: cardBounce 6s ease-in-out infinite;
 }
 
-
 .plan-badge {
   position: absolute;
-  top: -18px;
+  top: -26px;
+
   left: 50%;
   transform: translateX(-50%);
   background-color: #D7FB00;
   color: #000;
   font-family: 'Anton', sans-serif;
   font-size: 1rem;
-  padding: 4px 14px;
+
+  padding: 4px 16px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  white-space: nowrap;
+  z-index: 2;
 }
-
 
 @keyframes cardBounce {
   0%, 100% {
@@ -169,6 +171,7 @@
 
   .plan-card-title {
     font-size: 2.2rem;
+
   }
 
   .plan-price {

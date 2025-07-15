@@ -7,6 +7,9 @@ export default function FinalSection() {
         <defs>
           <pattern id="finalGrid" patternUnits="userSpaceOnUse" width="30" height="30">
             <path d="M0 0 L0 30 M0 0 L30 0" stroke="#D7FB00" strokeWidth="0.8" />
+
+            <path d="M0 30 L30 0 M0 0 L30 30" stroke="#D7FB00" strokeWidth="0.8" />
+
           </pattern>
         </defs>
         <rect width="100%" height="100%" fill="url(#finalGrid)" />
