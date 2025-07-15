@@ -46,6 +46,7 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
   border: 2px solid #D7FB00;
   transition: transform 0.3s ease;
+
   animation: cardBounce 6s ease-in-out infinite;
 }
 
