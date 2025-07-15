@@ -17,6 +17,7 @@
 .membership-title {
   font-family: 'Anton', sans-serif;
   color: #D7FB00;
+
   font-size: 3rem;
   margin-bottom: 50px;
   text-shadow: 2px 2px 0 #000;
@@ -31,6 +32,7 @@
   50% {
     text-shadow: 2px 2px 0 #000, 0 0 20px #D7FB00;
   }
+
 }
 
 .membership-plans {
@@ -50,9 +52,11 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
   border: 2px solid #D7FB00;
   transition: transform 0.3s ease;
+
   overflow: hidden;
   animation: cardBounce 6s ease-in-out infinite;
 }
+
 
 .plan-badge {
   position: absolute;
@@ -68,6 +72,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
 }
 
+
 @keyframes cardBounce {
   0%, 100% {
     transform: translateY(0);
@@ -75,6 +80,7 @@
   50% {
     transform: translateY(-6px);
   }
+
 }
 
 .plan-card::before {
@@ -89,6 +95,7 @@
 
 .plan-card:hover {
   transform: scale(1.07);
+
 }
 
 .plan-card.recommended {
@@ -96,38 +103,47 @@
   border-color: #fff;
   background: radial-gradient(circle at top left, rgba(215, 251, 0, 0.25), rgba(0, 0, 0, 0.7));
   box-shadow: 0 0 25px rgba(215, 251, 0, 0.6);
+
   padding-top: 60px;
+
 }
 
 .plan-card.recommended:hover {
   transform: scale(1.12);
+
 }
 
 .plan-card-title {
   font-family: 'Anton', sans-serif;
+
   font-size: 2rem;
   color: #D7FB00;
   margin-bottom: 20px;
+
   text-shadow: 1px 1px 0 #000;
 }
 
 .plan-price {
   font-family: 'Inter', sans-serif;
+
   font-size: 1.8rem;
   color: #fff;
   margin-bottom: 22px;
   font-weight: bold;
 }
 
+
   .plan-features {
     list-style: none;
     padding: 0;
     margin: 0;
     font-family: 'Inter', sans-serif;
+
     font-size: 1.4rem;
     line-height: 1.9;
     color: #ccc;
   }
+
 
 .plan-features li {
   margin-bottom: 10px;
@@ -140,12 +156,15 @@
   }
 
   .membership-title {
+
     font-size: 4.5rem;
+
     text-align: left;
   }
 
   .membership-plans {
     grid-template-columns: repeat(3, 1fr);
+
   }
 
   .plan-card-title {
@@ -158,5 +177,6 @@
 
   .plan-features {
     font-size: 1.5rem;
+
   }
 }
