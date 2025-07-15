@@ -20,6 +20,7 @@ export default function MembershipSection() {
           </motion.div>
 
           <motion.div className="plan-card recommended" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2, duration: 0.8 }}>
+            <span className="plan-badge">RECOMENDADO</span>
             <h3 className="plan-card-title">PLAN COMPLETO</h3>
             <p className="plan-price">$35.000</p>
             <ul className="plan-features">

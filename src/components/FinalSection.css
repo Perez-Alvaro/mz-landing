@@ -43,9 +43,11 @@
 .final-text {
   font-family: 'Inter', sans-serif;
   color: #ccc;
-  font-size: 1.3rem;
-  margin-bottom: 20px;
-  line-height: 1.5;
+
+  font-size: 1.4rem;
+  margin-bottom: 24px;
+  line-height: 1.7;
+
 }
 
 .final-icons {
@@ -98,7 +100,9 @@
   }
 
   .final-text {
-    font-size: 1.4rem;
+
+    font-size: 1.5rem;
+
   }
 
   .final-icon {
