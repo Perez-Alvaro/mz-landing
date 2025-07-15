@@ -16,23 +16,50 @@
 .testimonios-title {
   font-family: 'Anton', sans-serif;
   color: #D7FB00;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 40px;
+  animation: titleGlow 4s ease-in-out infinite;
+}
+
+@keyframes titleGlow {
+  0%, 100% {
+    text-shadow: 0 0 10px #D7FB00;
+  }
+  50% {
+    text-shadow: 0 0 20px #D7FB00;
+  }
 }
 
 .testimonios-list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
 }
 
 .testimonio-card {
+  position: relative;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 12px;
-  padding: 30px 20px;
+  padding: 40px 24px;
   color: #ccc;
   text-align: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  border: 2px solid #D7FB00;
+  transition: transform 0.3s ease;
+  animation: cardBounce 6s ease-in-out infinite;
+}
+
+@keyframes cardBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.testimonio-card:hover {
+  transform: scale(1.05);
 }
 
 .testimonio-avatar {
@@ -46,7 +73,7 @@
 
 .testimonio-text {
   font-family: 'Inter', sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.5;
   color: #ccc;
   margin-bottom: 12px;
@@ -54,7 +81,7 @@
 
 .testimonio-author {
   font-family: 'Anton', sans-serif;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: #D7FB00;
 }
 
@@ -65,22 +92,24 @@
   }
 
   .testimonios-title {
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-align: left;
   }
 
   .testimonios-list {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .testimonio-card {
-    flex: 1;
-    max-width: 30%;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .testimonio-avatar {
     width: 100px;
     height: 100px;
+  }
+
+  .testimonio-text {
+    font-size: 1.4rem;
+  }
+
+  .testimonio-author {
+    font-size: 1.2rem;
   }
 }
