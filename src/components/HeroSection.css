@@ -27,7 +27,6 @@
   line-height: 1.2;
   text-shadow: 2px 2px 0 #D7FB00;
   letter-spacing: 1px;
-
   animation: heroPulse 3s ease-in-out infinite;
 }
 
@@ -57,7 +56,6 @@
   line-height: 1.8;
 
   font-size: 1.3rem;
-
 }
 
 .hero-description strong {

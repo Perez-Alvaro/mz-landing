@@ -3,6 +3,14 @@ import './FinalSection.css';
 export default function FinalSection() {
   return (
     <section className="final">
+      <svg className="final-texture" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+        <defs>
+          <pattern id="finalGrid" patternUnits="userSpaceOnUse" width="30" height="30">
+            <path d="M0 0 L0 30 M0 0 L30 0" stroke="#D7FB00" strokeWidth="0.8" />
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#finalGrid)" />
+      </svg>
       <div className="final-content">
         <h2 className="final-title">TRANSFORMÁ TU CUERPO HOY</h2>
 

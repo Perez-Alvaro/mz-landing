@@ -78,6 +78,19 @@
 
 .plan-card:hover {
   transform: scale(1.07);
+
+}
+
+.plan-card.recommended {
+  transform: scale(1.05);
+  border-color: #fff;
+  background: radial-gradient(circle at top left, rgba(215, 251, 0, 0.25), rgba(0, 0, 0, 0.7));
+  box-shadow: 0 0 25px rgba(215, 251, 0, 0.6);
+}
+
+.plan-card.recommended:hover {
+  transform: scale(1.12);
+
 }
 
 .plan-card-title {

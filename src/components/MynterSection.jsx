@@ -24,9 +24,15 @@ export default function MynterSection() {
         </motion.p>
 
         <div className="mynter-features">
-          <p>📱 <span className="mynter-highlight">Plan de entrenamiento & nutrición</span> siempre a mano</p>
-          <p>📹 <span className="mynter-highlight">Registro diario</span> de peso, medidas y videos</p>
-          <p>📊 Seguimiento de tu progreso con <span className="mynter-highlight">gráficos y estadísticas</span></p>
+          <motion.div className="mynter-feature-card" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+            <p>📱 <span className="mynter-highlight">Plan de entrenamiento & nutrición</span> siempre a mano</p>
+          </motion.div>
+          <motion.div className="mynter-feature-card" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2, duration: 0.8 }}>
+            <p>📹 <span className="mynter-highlight">Registro diario</span> de peso, medidas y videos</p>
+          </motion.div>
+          <motion.div className="mynter-feature-card" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4, duration: 0.8 }}>
+            <p>📊 Seguimiento de tu progreso con <span className="mynter-highlight">gráficos y estadísticas</span></p>
+          </motion.div>
         </div>
 
         <a href="https://mynter.app" target="_blank" rel="noopener noreferrer" className="mynter-button">
