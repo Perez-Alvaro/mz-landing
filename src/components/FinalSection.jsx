@@ -3,15 +3,23 @@ import './FinalSection.css';
 export default function FinalSection() {
   return (
     <section className="final">
+      <svg className="final-texture" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+        <defs>
+          <pattern id="finalGrid" patternUnits="userSpaceOnUse" width="30" height="30">
+            <path d="M0 0 L0 30 M0 0 L30 0" stroke="#D7FB00" strokeWidth="0.8" />
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#finalGrid)" />
+      </svg>
       <div className="final-content">
-        <h2 className="final-title">¡LISTO PARA CAMBIAR TU VIDA?</h2>
+        <h2 className="final-title">TRANSFORMÁ TU CUERPO HOY</h2>
 
         <p className="final-text">
-          Esto no es magia, es trabajo y constancia. Pero no vas a estar solo: te acompaño en el proceso para que logres el cuerpo y la mentalidad que siempre buscaste.
+          Sin promesas vacías: con mi guía vas a entrenar mejor, comer bien y mantener la constancia que siempre te faltó.
         </p>
 
         <p className="final-text">
-          ¿Empezamos hoy o seguís esperando el "momento perfecto"?
+          Dejá la espera y empezá a cambiar ahora mismo.
         </p>
 
         <div className="final-icons">
