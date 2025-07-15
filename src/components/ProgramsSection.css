@@ -43,6 +43,7 @@
 .program-card {
   position: relative;
   background: radial-gradient(circle at top left, rgba(215, 251, 0, 0.15), rgba(0, 0, 0, 0.7));
+
   border-radius: 12px;
   padding: 40px 24px;
   color: #ccc;
@@ -50,6 +51,7 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
   border: 2px solid #D7FB00;
   transition: transform 0.3s ease;
+
   overflow: hidden;
   animation: cardBounce 6s ease-in-out infinite;
 }
@@ -82,13 +84,16 @@
   font-size: 2rem;
   color: #D7FB00;
   margin-bottom: 18px;
+
   text-shadow: 1px 1px 0 #000;
 }
 
 .program-card-text {
   font-family: 'Inter', sans-serif;
+
   font-size: 1.4rem;
   line-height: 1.9;
+
   color: #ccc;
 }
 
@@ -99,16 +104,20 @@
   }
 
   .programs-title {
+
+
     font-size: 4.5rem;
     text-align: left;
   }
 
   .program-card-title {
+
     font-size: 2.4rem;
   }
 
   .program-card-text {
     font-size: 1.5rem;
+
   }
 
   .programs-list {
