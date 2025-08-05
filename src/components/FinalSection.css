@@ -1,6 +1,6 @@
 .final {
   position: relative;
-  background-color: #000;
+  background-color: var(--color-background);
   padding: 60px 20px;
   text-align: center;
   overflow: hidden;
@@ -27,7 +27,7 @@
 
 .final-title {
   font-family: 'Anton', sans-serif;
-  color: #D7FB00;
+  color: var(--color-primary);
   font-size: 3rem;
   margin-bottom: 30px;
   animation: titleGlow 4s ease-in-out infinite;
@@ -35,16 +35,16 @@
 
 @keyframes titleGlow {
   0%, 100% {
-    text-shadow: 0 0 10px #D7FB00;
+    text-shadow: 0 0 10px var(--color-primary);
   }
   50% {
-    text-shadow: 0 0 20px #D7FB00;
+    text-shadow: 0 0 20px var(--color-primary);
   }
 }
 
 .final-text {
   font-family: 'Inter', sans-serif;
-  color: #ccc;
+  color: var(--color-text-neutral);
 
   font-size: 1.4rem;
   margin-bottom: 24px;
@@ -102,6 +102,7 @@
 .final-button:hover {
   background-color: #fff;
   color: #000;
+
 }
 
 .final-button.secondary:hover {

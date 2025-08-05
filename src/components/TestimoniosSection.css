@@ -1,6 +1,6 @@
 .testimonios {
   position: relative;
-  background-color: #000;
+  background-color: var(--color-background);
   padding: 50px 20px;
   overflow: hidden;
 }
@@ -15,7 +15,7 @@
 
 .testimonios-title {
   font-family: 'Anton', sans-serif;
-  color: #D7FB00;
+  color: var(--color-primary);
   font-size: 2.5rem;
   margin-bottom: 40px;
   animation: titleGlow 4s ease-in-out infinite;
@@ -23,10 +23,10 @@
 
 @keyframes titleGlow {
   0%, 100% {
-    text-shadow: 0 0 10px #D7FB00;
+    text-shadow: 0 0 10px var(--color-primary);
   }
   50% {
-    text-shadow: 0 0 20px #D7FB00;
+    text-shadow: 0 0 20px var(--color-primary);
   }
 }
 
@@ -38,13 +38,13 @@
 
 .testimonio-card {
   position: relative;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(45, 45, 45, 0.7);
   border-radius: 12px;
   padding: 40px 24px;
-  color: #ccc;
+  color: var(--color-text-neutral);
   text-align: center;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
-  border: 2px solid #D7FB00;
+  border: 2px solid var(--color-primary);
   transition: transform 0.3s ease;
 
   animation: cardBounce 6s ease-in-out infinite;
@@ -68,7 +68,7 @@
   height: 80px;
   object-fit: cover;
   border-radius: 50%;
-  border: 2px solid #D7FB00;
+  border: 2px solid var(--color-primary);
   margin-bottom: 15px;
 }
 
@@ -76,14 +76,14 @@
   font-family: 'Inter', sans-serif;
   font-size: 1.2rem;
   line-height: 1.5;
-  color: #ccc;
+  color: var(--color-text-neutral);
   margin-bottom: 12px;
 }
 
 .testimonio-author {
   font-family: 'Anton', sans-serif;
   font-size: 1.1rem;
-  color: #D7FB00;
+  color: var(--color-primary);
 }
 
 /* Desktop layout */
