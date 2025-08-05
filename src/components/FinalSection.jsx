@@ -26,9 +26,19 @@ export default function FinalSection() {
 
         <div className="final-icons">
           <img src="/dumbell.png" alt="Dumbell icon" className="final-icon" />
-          <a href="https://wa.me/5493512800414" target="_blank" rel="noopener noreferrer" className="final-button">
-            Quiero mi plan
-          </a>
+          <div className="final-buttons">
+            <a href="/rutinas" className="final-button">
+              Quiero mi rutina ideal!
+            </a>
+            <a
+              href="https://wa.me/5493512800414"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="final-button secondary"
+            >
+              Hablame y empecemos a entrenar!
+            </a>
+          </div>
           <img src="/plate.png" alt="Weight plate icon" className="final-icon" />
         </div>
       </div>

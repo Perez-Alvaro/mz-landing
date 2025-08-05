@@ -65,6 +65,12 @@
   height: auto;
 }
 
+.final-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .final-button {
   background-color: #D7FB00;
   color: #000;
@@ -75,6 +81,13 @@
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s;
   animation: pulseButton 3s ease-in-out infinite;
+}
+
+.final-button.secondary {
+  background-color: #000;
+  color: #D7FB00;
+  border: 2px solid #D7FB00;
+  animation: none;
 }
 
 @keyframes pulseButton {
@@ -88,6 +101,11 @@
 
 .final-button:hover {
   background-color: #fff;
+  color: #000;
+}
+
+.final-button.secondary:hover {
+  background-color: #D7FB00;
   color: #000;
 }
 
@@ -109,5 +127,9 @@
 
   .final-icon {
     width: 70px;
+  }
+
+  .final-buttons {
+    flex-direction: row;
   }
 }
