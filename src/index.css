@@ -3,12 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --color-background: #202020;
+  --color-background: #000000;
   --color-dark: #2D2D2D;
   --color-text-neutral: #787878;
   --color-primary: #CBFF00;
   --color-primary-hover: #DBFE52;
   --color-positive-bg: #F8FE9F;
+  --color-mynter: #00B2FF;;
 
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

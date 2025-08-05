@@ -14,9 +14,10 @@ export default function MynterSection() {
       </svg>
 
       <div className="mynter-content">
-        <img src="/mynter-logo.png" alt="Mynter logo" className="mynter-logo" />
-
         <h2 className="mynter-title">TODO CENTRALIZADO EN UNA APP</h2>
+
+        {/* Mueve el logo aquí */}
+        <img src="/mynter-logo.png" alt="Mynter logo" className="mynter-logo" />
 
         <motion.p className="mynter-text" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
           Entrená con <span className="mynter-highlight">Mynter</span>, la app mobile que reúne tu plan de entrenamiento, nutrición,
