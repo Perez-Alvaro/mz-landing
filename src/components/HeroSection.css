@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   padding: 50px 20px;
-  background-color: #000;
+  background-color: var(--color-background);
   position: relative;
   overflow: hidden;
 }
@@ -24,33 +24,33 @@
   color: white;
   margin-bottom: 20px;
   line-height: 1.2;
-  text-shadow: 2px 2px 0 #D7FB00;
+  text-shadow: 2px 2px 0 var(--color-primary);
   letter-spacing: 1px;
   animation: heroPulse 3s ease-in-out infinite;
 }
 
 @keyframes heroPulse {
   0% {
-    text-shadow: 0 0 10px #D7FB00;
+    text-shadow: 0 0 10px var(--color-primary);
   }
   50% {
-    text-shadow: 0 0 20px #D7FB00;
+    text-shadow: 0 0 20px var(--color-primary);
   }
   100% {
-    text-shadow: 0 0 10px #D7FB00;
+    text-shadow: 0 0 10px var(--color-primary);
   }
 }
 
 .hero-title .highlight {
-  background: linear-gradient(90deg, #D7FB00 0%, #D7FB00 100%);
-  color: #000;
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-primary) 100%);
+  color: var(--color-background);
   padding: 0 8px;
   border-radius: 4px;
 }
 
 .hero-description {
   font-family: 'Inter', sans-serif;
-  color: #ccc;
+  color: var(--color-text-neutral);
   margin-bottom: 14px;
   line-height: 1.8;
 
@@ -59,18 +59,24 @@
 }
 
 .hero-description strong {
-  color: #D7FB00;
+  color: var(--color-primary);
 }
 
 .hero-button {
-  background-color: #D7FB00;
-  color: #000;
+  background-color: var(--color-primary);
+  color: var(--color-background);
   padding: 12px 28px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
   display: inline-block;
   margin-top: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.hero-button:hover {
+  background-color: var(--color-primary-hover);
+  color: var(--color-background);
 }
 
 .hero-image {
