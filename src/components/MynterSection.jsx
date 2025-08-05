@@ -7,7 +7,7 @@ export default function MynterSection() {
       <svg className="mynter-texture" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
         <defs>
           <pattern id="dots" patternUnits="userSpaceOnUse" width="20" height="20">
-            <circle cx="1" cy="1" r="1" fill="#D7FB00" />
+            <circle cx="1" cy="1" r="1" fill="#CBFF00" />
           </pattern>
         </defs>
         <rect width="100%" height="100%" fill="url(#dots)" />

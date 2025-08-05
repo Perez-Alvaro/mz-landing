@@ -6,8 +6,8 @@ export default function FinalSection() {
       <svg className="final-texture" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
         <defs>
           <pattern id="finalGrid" patternUnits="userSpaceOnUse" width="30" height="30">
-            <path d="M0 0 L0 30 M0 0 L30 0" stroke="#D7FB00" strokeWidth="0.8" />
-            <path d="M0 30 L30 0 M0 0 L30 30" stroke="#D7FB00" strokeWidth="0.8" />
+            <path d="M0 0 L0 30 M0 0 L30 0" stroke="#CBFF00" strokeWidth="0.8" />
+            <path d="M0 30 L30 0 M0 0 L30 30" stroke="#CBFF00" strokeWidth="0.8" />
 
           </pattern>
         </defs>
@@ -26,9 +26,19 @@ export default function FinalSection() {
 
         <div className="final-icons">
           <img src="/dumbell.png" alt="Dumbell icon" className="final-icon" />
-          <a href="https://wa.me/5493512800414" target="_blank" rel="noopener noreferrer" className="final-button">
-            Quiero mi plan
-          </a>
+          <div className="final-buttons">
+            <a href="/rutinas" className="cta-button primary">
+              Quiero mi rutina ideal!
+            </a>
+            <a
+              href="https://wa.me/5493512800414"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cta-button secondary"
+            >
+              Hablame y empecemos a entrenar!
+            </a>
+          </div>
           <img src="/plate.png" alt="Weight plate icon" className="final-icon" />
         </div>
       </div>
