@@ -71,6 +71,45 @@
   gap: 20px;
 }
 
+.final-button {
+  background-color: #D7FB00;
+  color: #000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  padding: 12px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  animation: pulseButton 3s ease-in-out infinite;
+}
+
+.final-button.secondary {
+  background-color: #000;
+  color: #D7FB00;
+  border: 2px solid #D7FB00;
+  animation: none;
+}
+
+@keyframes pulseButton {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(215, 251, 0, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 20px 5px rgba(215, 251, 0, 0.7);
+  }
+}
+
+.final-button:hover {
+  background-color: #fff;
+  color: #000;
+
+}
+
+.final-button.secondary:hover {
+  background-color: #D7FB00;
+  color: #000;
+}
+
 /* Desktop layout */
 @media (min-width: 768px) {
   .final {
